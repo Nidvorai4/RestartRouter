@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayoutToast"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:background="@drawable/dialog_bg">
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/reload1"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/stringEmpty"
+        android:id="@+id/imageViewBusy">
+    </ImageView>
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/imageViewBusy"
+        android:text="@string/stringConnecting"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorUnderBar">
+    </TextView>
+</RelativeLayout>
